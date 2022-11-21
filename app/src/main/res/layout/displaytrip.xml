@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Trip_ID"
+    android:layout_width="370dp"
+    android:layout_height="140dp"
+    android:layout_marginTop="15dp"
+
+    android:layout_marginLeft="20dp"
+    android:background="#E35F71"
+    app:cardBackgroundColor="#E35F71"
+    app:cardCornerRadius="25dp"
+
+    app:cardElevation="12dp">
+
+
+    <LinearLayout
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Tour_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/TourName_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tour Name:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/Destination_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destination: "
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/DateTour_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date Tour:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/Risk_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Risk:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/Description_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID Update/Delete: "
+            android:textColor="@color/white" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tour Name:"
+            android:textColor="@color/white" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destinatnion: "
+            android:textColor="@color/white" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date Tour:"
+            android:textColor="@color/white" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Risk:"
+            android:textColor="@color/white" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No.validate:"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registeredFragment">
+
+    <fragment
+        android:id="@+id/registeredFragment"
+        android:name="com.example.navigatio_learn.RegisteredFragment"
+        android:label="Create Section"
+        tools:layout="@layout/fragment_registered">
+        <action
+            android:id="@+id/action_registeredFragment_to_confirmFragment"
+            app:destination="@id/confirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.navigatio_learn.listFragment"
+        android:label="View section"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_expense_Fragment"
+            app:destination="@id/expense_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.navigatio_learn.AboutFragment"
+        android:label="About section"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/confirmFragment"
+        android:name="com.example.navigatio_learn.ConfirmFragment"
+        android:label="Confirmation "
+        tools:layout="@layout/fragment_confirm" />
+    <fragment
+        android:id="@+id/expense_Fragment"
+        android:name="com.example.navigatio_learn.Expense_Fragment"
+        android:label="Detail Trip"
+        tools:layout="@layout/fragment_expense">
+        <action
+            android:id="@+id/action_expense_Fragment_to_add_Expense_Fragment_1"
+            app:destination="@id/add_Expense_Fragment_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_Expense_Fragment_1"
+        android:name="com.example.navigatio_learn.Add_Expense_Fragment_1"
+        android:label="Add Expenditures"
+        tools:layout="@layout/fragment_add__expense__1">
+        <action
+            android:id="@+id/action_add_Expense_Fragment_1_to_expense_Fragment"
+            app:destination="@id/expense_Fragment" />
+    </fragment>
+</navigation>

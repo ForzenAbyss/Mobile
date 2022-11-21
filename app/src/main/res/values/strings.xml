@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Navigatio_Learn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="NameTour">Name Tour (Required)</string>
+    <string name="Destination">Destination (Required)</string>
+    <string name="DateTrip">Date of the Tour (Required)</string>
+    <string name="Risk_assessment">Risk acceptance [Yes/No] (Required)</string>
+    <string name="Description">Your last 4 Digits ID card (Required)</string>
+    <string name="Confirm">Passenger Detail Information</string>
+    <string name="Destination_Empty">Please enter your Destination.</string>
+    <string name="Tourname_Empty">Please enter your Tour name.</string>
+    <string name="Date_Empty">Please enter your Date visit.</string>
+    <string name="Risk_empty">Please choose "Yes" or "No".</string>
+    <string name="Digits_empty">Please enter your numbers.</string>
+    <string name="noti_create_account_success">Account has logged out successfully.</string>
+
+
+    <string name="Ex_name_Empty">Please enter your Expenditure name.</string>
+    <string name="Ex_note_Empty">Don"t you have something to note?</string>
+    <string name="Ex_time_Empty">When did you use your money?</string>
+    <string name="Ex_type_Empty">Transportation? Food? Accommodation? Others...?</string>
+    <string name="Ex_price_Empty">Please enter your value!</string>
+
+
+</resources>

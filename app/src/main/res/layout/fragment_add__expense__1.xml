@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Expense_Fragment_1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <EditText
+            android:id="@+id/expense_price"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/ic_4"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Price..."
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#716E6E"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/expense_type"
+            app:layout_constraintTop_toBottomOf="@+id/expense_type" />
+
+        <EditText
+            android:id="@+id/expense_type"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/search_icon"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Type Of Expenditures..."
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#6E6B6B"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/expense_time"
+            app:layout_constraintStart_toStartOf="@+id/expense_time"
+            app:layout_constraintTop_toBottomOf="@+id/expense_time" />
+
+        <Button
+            android:id="@+id/btn_add_expense"
+            style="@android:style/Widget.Button"
+            android:layout_width="315dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_background"
+            android:text="Add Expense"
+
+
+            android:textColor="#ffff"
+
+            android:textSize="20sp"
+            app:backgroundTint="#E35F71"
+            app:layout_constraintEnd_toEndOf="@+id/expense_price"
+            app:layout_constraintStart_toStartOf="@+id/expense_price"
+            app:layout_constraintTop_toBottomOf="@+id/expense_price" />
+
+        <EditText
+            android:id="@+id/expense_time"
+            android:layout_width="320dp"
+
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/voice_call"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Time..."
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#817E7E"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/expense_note"
+            app:layout_constraintStart_toStartOf="@+id/expense_note"
+            app:layout_constraintTop_toBottomOf="@+id/expense_note" />
+
+        <EditText
+            android:id="@+id/expense_name"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/video_call"
+            android:drawablePadding="8dp"
+            android:ems="20"
+            android:hint="Name..."
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#8F8989"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/expense_note"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+
+            android:drawableStart="@drawable/notification"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Note..."
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#6A6464"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/expense_name"
+            app:layout_constraintStart_toStartOf="@+id/expense_name"
+            app:layout_constraintTop_toBottomOf="@+id/expense_name" />
+
+        <TextView
+            android:id="@+id/MessageError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#FAF6F6"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_add_expense"
+            app:layout_constraintStart_toStartOf="@+id/btn_add_expense"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add_expense" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Expenditures"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

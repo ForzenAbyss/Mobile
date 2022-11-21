@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0FC"
+    tools:context=".RegisteredFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <EditText
+            android:id="@+id/DateTour"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+
+            android:drawableStart="@drawable/ic_5"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/DateTrip"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#716E6E"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/Destination"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Destination" />
+
+        <EditText
+            android:id="@+id/Risk"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+
+            android:drawableStart="@drawable/ic_6"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/Risk_assessment"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#6E6B6B"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/DateTour"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DateTour" />
+
+        <Button
+            android:id="@+id/btn_Register_Registered"
+            style="@android:style/Widget.Button"
+            android:layout_width="315dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button_background"
+            android:text="Register"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+
+
+            app:backgroundTint="#E35F71"
+            app:layout_constraintEnd_toEndOf="@+id/Description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Description"
+
+            />
+
+        <Button
+            android:id="@+id/btn_Register_Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="150dp"
+            android:height="55dp"
+            app:backgroundTint="#E35F71"
+            android:background="@drawable/button_background"
+            android:text="Update"
+
+            app:layout_constraintStart_toStartOf="@+id/btn_Register_Registered"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Register_Registered" />
+
+        <Button
+            android:id="@+id/btn_Register_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="150dp"
+            android:height="55dp"
+            android:text="Delete"
+            app:backgroundTint="#E35F71"
+            android:background="@drawable/button_background"
+
+            android:textColor="#ffff"
+            app:layout_constraintEnd_toEndOf="@+id/btn_Register_Registered"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Register_Registered" />
+
+        <EditText
+            android:id="@+id/Description"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/Description"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#817E7E"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/Risk"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Risk" />
+
+        <EditText
+            android:id="@+id/Tour_ID"
+            android:layout_width="128dp"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:ems="10"
+            android:hint="ID Update/Delete"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textColorHint="#817E7E"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@+id/Description"
+            app:layout_constraintTop_toBottomOf="@+id/Description" />
+
+        <EditText
+            android:id="@+id/NameTour"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/name"
+            android:drawablePadding="8dp"
+            android:ems="20"
+            android:hint="@string/NameTour"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#8F8989"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/Destination"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/ic_2"
+            android:drawablePadding="10dp"
+
+            android:ems="10"
+            android:hint="@string/Destination"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#6A6464"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/NameTour"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/NameTour"
+            app:layout_constraintTop_toBottomOf="@+id/NameTour" />
+
+        <TextView
+            android:id="@+id/MessageError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#FAF6F6"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/Description"
+            app:layout_constraintTop_toBottomOf="@+id/Description" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Create Trip"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
